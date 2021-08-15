@@ -12,3 +12,9 @@ This is the Starter Project, which is intended to be a core learning asset for t
 who have enroled the Design and Testing subject of the Software Engineering curriculum of the 
 University of Sevilla.  This project helps them start working on their new information system 
 projects.
+
+This is Acme Work-Plans, the second project of Group 10 for Design & Testing 2 subject
+(September evaluation).
+
+GitHub repository: https://github.com/Jomer1998/Acme-Work-Plans-D02
+GitHub release: 
