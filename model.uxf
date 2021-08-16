@@ -296,4 +296,22 @@ m2=*
 has v</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>49</x>
+      <y>420</y>
+      <w>259</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Shout
+--
++ moment: Date {NotNull, Temporal(TIMESTAMP)}
++ author: String {NotBlank, Length(min = 5, max = 25)}
++ text: String {NotBlank, Length(min = 1, max = 100)}
++ info: String {URL, Length(max = 255)}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
