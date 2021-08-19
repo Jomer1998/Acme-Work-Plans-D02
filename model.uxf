@@ -428,4 +428,29 @@ bg=blue</panel_attributes>
     <panel_attributes>lt=..</panel_attributes>
     <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>546</y>
+      <w>217</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Dashboard
+--
++ totalNumberOfPublicTasks: Integer
++ totalNumberOfPrivateTasks: Integer
++ totalNumberOfFinishedTasks: Integer
++ totalNumberOfNonFinishedTasks: Integer
++ averageTaskExecutionPeriods: Double
++ deviationTaskExecutionPeriods: Double
++ minimumTaskExecutionPeriod: Double
++ maximumTaskExecutionPeriod: Double
++ averageTaskWorkloads: Double
++ deviationTaskWorkloads: Double
++ minimumTaskWorkload: Double
++ maximumTaskWorkload: Double</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
