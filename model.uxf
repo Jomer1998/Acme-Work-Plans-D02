@@ -338,4 +338,94 @@ Manager
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>448</x>
+      <y>455</y>
+      <w>322</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Task
+--
++ title: String {NotBlank, Length(min = 1, max = 80)}
++ startExecutionPeriod: Date {NotNull, Temporal(TIMESTAMP)}
++ endExecutionPeriod: Date {NotNull, Temporal(TIMESTAMP)}
++ workload: Double {NotNull, Min(0), Digits(integer = 2, fraction = 2)}
++ description: String {NotBlank, Length(min = 1, max = 255)}
++ share: TaskShare {NotNull}
++ link: String {URL, Length(max = 255)}
++ / maxWorkload: Double {Transient}</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>602</x>
+      <y>322</y>
+      <w>84</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-x
+m1=1
+m2=0..*
+Managed by ^</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>847</x>
+      <y>462</y>
+      <w>245</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>maxWorkload = Número de horas y minutos entre
+las fechas de inicio y final.
+
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>763</x>
+      <y>469</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>847</x>
+      <y>518</y>
+      <w>245</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>workload = La parte entera representa las horas
+(con un valor entre 0 y 99), mientras la parte
+decimal representa los minutos (con un valor
+entre 0 y 59).
+ 
+Este workload no debe ser mayor que el atributo
+derivado maxWorkload.
+
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>763</x>
+      <y>546</y>
+      <w>98</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=..</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
 </diagram>
